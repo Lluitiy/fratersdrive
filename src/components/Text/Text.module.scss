@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.heading {
+	@include media(tablet) {
+		font-size: 40px;
+	}
+}
+
+.text {
+	@include media(tablet) {
+		font-size: 24px;
+	}
+}
