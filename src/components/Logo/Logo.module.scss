@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.logo {
+	@include flex(flex-start, end);
+	width: 150px;
+	color: $text-secondary;
+	font-size: 24px;
+}

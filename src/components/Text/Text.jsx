@@ -1,20 +1,29 @@
+import autoImg from "../../assets/Picsart_23-06-07_00-14-09-249.jpg";
+
 import styles from "./Text.module.scss";
 
 const Text = () => {
 	return (
 		<div className="container">
-			<h1 className={styles.heading}>Dear visitors,</h1>
-			<br />
-			<div className={styles.text}>
-				We would like to inform you that our website is currently under
-				development. We are working hard to bring you an enhanced
-				browsing experience with exciting features and valuable content.
-				We apologize for any inconvenience caused during this phase.
-				Please stay tuned for updates and progress on our development.
-				We appreciate your patience and understanding. Thank you for
-				your interest in our website, and we look forward to sharing the
-				final product with you soon! Best regards, The Website
-				Development Team
+			<div className={styles.wrapper}>
+				<h1 className={styles.heading}>Import of Japanese cars</h1>
+
+				<div className={styles.text}>
+					Welcome to our company! We specialize in importing Japanese
+					cars and selling them directly in United Kingdom.Our
+					services include assistance with comprehensive car
+					purchasing in Japan,ensuring a seamless experience from
+					selection to home delivery . With our expert support, you
+					can find your dream car and have it conveniently delivered
+					right to your doorstep in the UK
+				</div>
+				<img
+					src={autoImg}
+					alt="auto image"
+					width={480}
+					height={240}
+					className={styles.bgImg}
+				/>
 			</div>
 		</div>
 	);

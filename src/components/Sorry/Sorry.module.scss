@@ -1,0 +1,31 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.text {
+	position: absolute;
+	// top: 0;
+	// left: 0;
+	display: none;
+	padding: 4px;
+	font-size: 14px;
+	color: black;
+
+	outline: 1px solid black;
+	outline-offset: -3px;
+	background: $secondary-bg;
+	width: 260px;
+
+	@include media(tablet) {
+		display: block;
+		left: 60%;
+		top: 25%;
+		transform: translate(-50%, -50%);
+	}
+
+	@include media(desktop) {
+		font-size: 18px;
+		width: 320px;
+		left: 50%;
+		top: 25%;
+	}
+}

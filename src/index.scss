@@ -9,8 +9,10 @@
 	margin: 0;
 }
 
-html {
+html,
+body {
 	scroll-behavior: smooth;
+	height: 100%;
 }
 
 ul,
@@ -71,7 +73,7 @@ textarea {
 }
 body {
 	background-color: $main-bg;
-	color: $text;
+	color: $text-secondary;
 	// font-family: $mainFont;
 }
 

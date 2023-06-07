@@ -1,2 +1,25 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
+
+.item {
+	@include flex(flex-end, flex-end);
+	padding: 8px 0px;
+	.navlink {
+		color: $text-secondary;
+		text-transform: capitalize;
+		text-decoration: none;
+
+		transition: $transition-main;
+		@include media(desktop) {
+			&:hover,
+			&:focus {
+				color: $active-navlink;
+			}
+		}
+	}
+
+	.active {
+		@extend .navlink;
+		color: $active-navlink;
+	}
+}

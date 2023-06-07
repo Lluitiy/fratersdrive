@@ -1,14 +1,54 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
-.heading {
-	@include media(tablet) {
-		font-size: 40px;
-	}
-}
+.wrapper {
+	position: relative;
+	@include flex(space-between, flex-start);
+	flex-direction: column;
+	gap: 40px;
 
-.text {
 	@include media(tablet) {
-		font-size: 24px;
+		gap: 80px;
+	}
+
+	.bgImg {
+		position: absolute;
+		right: -50px;
+		bottom: -170px;
+		z-index: -1;
+
+		@include media(tablet) {
+			right: 0;
+			bottom: 0;
+			transform: translateY(50%);
+			width: 900px;
+			height: 450px;
+		}
+
+		@include media(desktop) {
+			width: 1200px;
+			height: 600px;
+		}
+	}
+
+	.heading {
+		@include media(tablet) {
+			font-size: 24px;
+		}
+
+		@include media(desktop) {
+			font-size: 36px;
+		}
+	}
+
+	.text {
+		@include media(tablet) {
+			font-size: 14px;
+			width: 250px;
+		}
+		@include media(desktop) {
+			font-size: 20px;
+			width: 400px;
+		}
 	}
 }
