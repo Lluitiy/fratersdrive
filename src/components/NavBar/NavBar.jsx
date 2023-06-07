@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import { navbar } from "../../data/navbar";
-import Logo from "../Logo/Logo";
 
+import Logo from "../Logo/Logo";
 import Navlink from "./Navlink";
 
 const NavBar = ({ styles, isOpen }) => {
@@ -18,7 +18,6 @@ const NavBar = ({ styles, isOpen }) => {
 				}
 			>
 				{isTabletOrDesktop && <Logo />}
-
 				<ul className={styles.list}>
 					{navbar.map((link) => (
 						<Navlink key={link.id} link={link} />

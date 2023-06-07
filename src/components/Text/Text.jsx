@@ -1,4 +1,4 @@
-import autoImg from "../../assets/Picsart_23-06-07_00-14-09-249.jpg";
+import autoImg from "../../assets/supra.png";
 
 import styles from "./Text.module.scss";
 
